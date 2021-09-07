@@ -7,6 +7,22 @@ const getTraceParams = function (paramKey, idx) {
     traceParam['xaxis'] = xaxis
     switch (paramKey.replace(/[0-9]/g, '')) {
         case 'temp':
+        case 'temp_ctd':
+        case 'temp_btl':
+      	case 'potential_temperature_68_btl':
+      	case 'rev_temperature_btl':
+      	case 'partial_co2_temperature_btl':
+      	case 'ctd_temperature_68_ctd':
+      	case 'rev_temperature_90_btl':
+      	case 'ref_temperature_c_btl':
+      	case 'potential_temperature_btl':
+      	case 'rev_temperature_c_btl':
+      	case 'ctd_temperature_unk_btl':
+      	case 'ph_temperature_btl':
+      	case 'potential_temperature_c_btl':
+      	case 'ctd_temperature_unk_ctd':
+      	case 'fco2_temperature_btl':
+      	case 'ref_temperature_btl':
             traceParam['ylabel'] = 'pressure: '
             traceParam['xlabel'] = 'temperature: '
             traceParam['yunits'] = ' dbar'
@@ -15,6 +31,9 @@ const getTraceParams = function (paramKey, idx) {
             traceParam['color'] = 'rgb(220,50,50)'
             break;
         case 'psal':
+        case 'psal_ctd':
+        case 'psal_btl':
+        case 'salinity_btl':
             traceParam['ylabel'] = 'pressure: '
             traceParam['xlabel'] = 'psal: '
             traceParam['yunits'] = ' dbar'
@@ -49,6 +68,13 @@ const getTraceParams = function (paramKey, idx) {
             traceParam['color'] = 'rgb(189,200,202)'
             break;
         case 'doxy':
+        case 'doxy_ctd':
+        case 'del_oxygen_18_error_btl':
+        case 'oxygen_btl':
+        case 'oxygen_ml_l_btl':
+        case 'del_oxygen_18_btl':
+        case 'ctd_oxygen_ml_l_ctd':
+        case 'doxy_btl':
             traceParam['ylabel'] = 'pressure: '
             traceParam['xlabel'] = 'doxy: '
             traceParam['yunits'] = ' dbar'
@@ -57,6 +83,8 @@ const getTraceParams = function (paramKey, idx) {
             traceParam['color'] = 'rgb(242,231,55)'
             break;
         case 'chla':
+        case 'chlorophyll_a_ug_kg_btl':
+        case 'chlorophyll_a_btl':
             traceParam['ylabel'] = 'pressure: '
             traceParam['xlabel'] = 'chla: '
             traceParam['yunits'] = ' dbar'
@@ -73,6 +101,8 @@ const getTraceParams = function (paramKey, idx) {
             traceParam['color'] = 'rgb(133,212,227)'
             break;
         case 'nitrate':
+        case 'nitrite_nitrate_btl':
+        case 'nitrate_btl':
             traceParam['ylabel'] = 'pressure: '
             traceParam['xlabel'] = 'nitrate: '
             traceParam['yunits'] = ' dbar'
@@ -97,6 +127,8 @@ const getTraceParams = function (paramKey, idx) {
             traceParam['color'] = 'rgb(242,231,55)'
             break;
         case 'ph_in_situ_total':
+        case 'ph_sws_btl':
+        case 'ph_total_h_scale_btl':
             traceParam['ylabel'] = 'pressure: '
             traceParam['xlabel'] = 'pH: '
             traceParam['yunits'] = ' dbar'

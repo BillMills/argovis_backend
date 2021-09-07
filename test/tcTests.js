@@ -11,7 +11,7 @@ let should = chai.should();
 
 chai.use(chaiHttp);
 
-//http://localhost:3000/tc/findByDateRange?startDate=2018-08-15T00:00:00&endDate=2018-09-17T00:00:00
+//http://localhost:3001/tc/findByDateRange?startDate=2018-08-15T00:00:00&endDate=2018-09-17T00:00:00
 describe('/GET Traj Shapes on a certain date range', function() {
   this.timeout(5000);
   it('it should GET the tc in a date range.', (done) => {
@@ -39,7 +39,7 @@ describe('/GET Traj Shapes on a certain date range', function() {
   });
 });
 
-//http://localhost:3000/tc/findByNameYear?name=lane&year=2018
+//http://localhost:3001/tc/findByNameYear?name=lane&year=2018
 describe('/GET TC storm by name and year', function() {
     this.timeout(5000);
     it('it should GET a TC by name and year.', (done) => {

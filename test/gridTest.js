@@ -36,7 +36,7 @@ describe('/GET get a RG temp anom object', function() {
     });
   });
 
-  //http://localhost:3000/griddedProducts/nonUniformGrid/window?latRange=[-75,-73]&lonRange=[-5,0]&gridName=sose_si_area_3_day&date=2013-01-04&presLevel=0
+  //http://localhost:3001/griddedProducts/nonUniformGrid/window?latRange=[-75,-73]&lonRange=[-5,0]&gridName=sose_si_area_3_day&date=2013-01-04&presLevel=0
   //test sose_si_area_3_day assums it is in the db
   describe('/GET get a sose_si_area_3_day object', function() {
 
